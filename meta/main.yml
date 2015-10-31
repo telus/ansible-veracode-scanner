@@ -1,0 +1,16 @@
+---
+dependencies: []
+galaxy_info:
+  author: "Ben Visser"
+  company: "TELUS digital"
+  description: "Uses veracodecli gem to set up cron tasks for veracode scanning"
+  license: MIT
+  platforms:
+    - name: Ubuntu
+      versions:
+      - precise
+      - trusty
+      - utopic
+  categories:
+    - system
+
