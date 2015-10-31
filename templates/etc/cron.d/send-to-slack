@@ -1,0 +1,1 @@
+{{ veracode_scanner_cron_shedule }} {{ veracode_scanner_cron_user }} veracodecli get_pdf_report --app {{ veracode_scanner_app_name }} --slack_upload {% if veracode_slack_upload %}yes{% else %}no{% endif %}

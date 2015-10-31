@@ -1,0 +1,10 @@
+---
+veracode_username: {{ veracode_scanner_api_username }}
+veracode_password: {{ veracode_scanner_api_password }}
+team: {{ veracode_scanner_team }}
+business_unit: {{ veracode_scanner_business_unit }}
+business_criticality: {{ veracode_scanner_business_criticality }}
+{% if veracode_slack_upload %}
+slack_token: {{ veracode_scanner_slack_token }}
+slack_channel: {{ veracode_scanner_slack_channel }}
+{% endif %}
