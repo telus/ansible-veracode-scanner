@@ -1,4 +1,4 @@
-# ansible-veracode-cron-scanner
+# ansible-veracode-scanner
 
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
