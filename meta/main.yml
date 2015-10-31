@@ -1,5 +1,9 @@
 ---
-dependencies: []
+dependencies:
+  - role: telusdigital.ruby
+    ruby_gems:
+      - veracodecli
+  
 galaxy_info:
   author: "Ben Visser"
   company: "TELUS digital"

@@ -6,7 +6,7 @@ TBD.
 
 Dependencies
 ------------
-None.
+[telusdigital.ruby](https://github.com/telusdigital/ansible-ruby/)
 
 Example Playbook
 ----------------
