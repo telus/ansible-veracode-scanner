@@ -1,0 +1,12 @@
+---
+veracode_scanner_api_username: "{{ mandatory }}"
+veracode_scanner_api_password: "{{ mandatory }}"
+veracode_scanner_team: "{{ mandatory }}"
+veracode_scanner_business_unit: "{{ mandatory }}"
+veracode_scanner_business_criticality: "{{ mandatory }}"
+veracode_scanner_repo: "{{ mandatory }}"
+veracode_scanner_app_name: "{{ mandatory }}"
+
+veracode_slack_upload: no
+veracode_scanner_slack_token: ''
+veracode_scanner_slack_channel: ''
