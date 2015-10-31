@@ -1,5 +1,7 @@
 # ansible-veracode-cron-scanner
 
+[![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
+
 Tunables
 --------
 TBD.
