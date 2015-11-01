@@ -8,8 +8,8 @@ veracode_scanner_repo: "{{ mandatory }}"
 veracode_scanner_app_name: "{{ mandatory }}"
 
 veracode_slack_upload: yes
-veracode_scanner_slack_token: "{{ mandatory }}"
-veracode_scanner_slack_channel: "{{ mandatory }}"
+veracode_scanner_slack_token: ""
+veracode_scanner_slack_channel: ""
 
 veracode_scanner_cron_shedule: "15 15 * * MON,THU"
 veracode_scanner_cron_user: root
