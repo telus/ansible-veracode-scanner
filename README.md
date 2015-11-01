@@ -1,5 +1,6 @@
 # ansible-veracode-scanner
 
+[![Build Status](https://travis-ci.org/telusdigital/ansible-veracode-scanner.svg?branch=master)](https://travis-ci.org/telusdigital/ansible-veracode-scanner)
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 Tunables
