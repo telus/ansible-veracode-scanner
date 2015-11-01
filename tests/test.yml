@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - role: ansible-veracode-scanner
+      veracode_scanner_api_username: "None"
+      veracode_scanner_api_password: "None"
+      veracode_scanner_team: "Travis"
+      veracode_scanner_business_unit: "Travis"
+      veracode_scanner_business_criticality: "High"
+      veracode_scanner_repo: "Travis"
+      veracode_scanner_app_name: "Travis"
