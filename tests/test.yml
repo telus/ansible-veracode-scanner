@@ -2,6 +2,9 @@
 - hosts: localhost
   remote_user: root
   roles:
+    - role: telusdigital.ruby
+      ruby_gems:
+        - veracodecli
     - role: ansible-veracode-scanner
       veracode_scanner_api_username: "None"
       veracode_scanner_api_password: "None"
