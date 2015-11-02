@@ -1,8 +1,8 @@
 ---
 - name: Configure | veracodecli | Set veracodecli config
   template: 
-    src: etc/veracodecli.yml
-    dest: /etc/veracodecli.yml
+    src: etc/veracodecli.yaml
+    dest: /etc/veracodecli.yaml
     owner: root
     group: root
     mode: 0644
