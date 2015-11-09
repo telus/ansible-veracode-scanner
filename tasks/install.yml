@@ -1,0 +1,8 @@
+---
+- name: Directory Exists | /etc/cron.d
+  file:
+    state: directory
+    path: /etc/cron.d
+    owner: root
+    group: staff
+    mode: 0775
