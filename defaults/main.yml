@@ -1,4 +1,5 @@
 ---
+veracode_scanner_enabled: yes
 veracode_scanner_api_username: "{{ mandatory }}"
 veracode_scanner_api_password: "{{ mandatory }}"
 veracode_scanner_team: "{{ mandatory }}"
