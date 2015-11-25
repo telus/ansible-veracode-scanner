@@ -8,7 +8,7 @@
     mode: 0644
 
 - name: Configure | Cron | Send veracode results to veracode
-  temaplate:
+  template:
     src: etc/cron.d/send-to-veracode
     dest: /etc/cron.d/send-to-veracode
     owner: root
@@ -16,7 +16,7 @@
     mode: 0644
 
 - name: Configure | Cron | Send veracode results to slack
-  temaplate:
+  template:
     src: etc/cron.d/send-to-slack
     dest: /etc/cron.d/send-to-slack
     owner: root
