@@ -1,6 +1,6 @@
 ---
 - name: Configure | veracodecli | Set veracodecli config
-  template: 
+  template:
     src: etc/veracodecli.yaml
     dest: /etc/veracodecli.yaml
     owner: root
@@ -8,21 +8,37 @@
     mode: 0644
 
 - name: Configure | Cron | Send veracode results to veracode
-  cron: 
-    name: send to veracode 
-    weekday: "1,4"
-    minute: "30" 
-    hour: "15"
-    user: root
-    job: "veracodecli scan --repo {{ veracode_scanner_repo }} --app_name {{ veracode_scanner_app_name }} >/dev/null 2>&1"
-    cron_file: send-to-veracode
+  temaplate:
+    src: etc/cron.d/send-to-veracode
+    dest: /etc/cron.d/send-to-veracode
+    owner: root
+    group: root
+    mode: 0644
 
 - name: Configure | Cron | Send veracode results to slack
-  cron: 
-    name: send to slack
-    weekday: "1,4" 
-    minute: "30"
-    hour: "15"
-    user: root
-    job: "veracodecli get_pdf_report --app_name {{ veracode_scanner_app_name }} --slack_upload {% if veracode_slack_upload %}yes{% else %}no{% endif %} >/dev/null 2>&1"
-    cron_file: send-to-slack
+  temaplate:
+    src: etc/cron.d/send-to-slack
+    dest: /etc/cron.d/send-to-slack
+    owner: root
+    group: root
+    mode: 0644
+
+# - name: Configure | Cron | Send veracode results to veracode
+#   cron:
+#     name: send to veracode
+#     weekday: "1,4"
+#     minute: "30"
+#     hour: "15"
+#     user: root
+#     job: "veracodecli scan --repo {{ veracode_scanner_repo }} --app_name {{ veracode_scanner_app_name }} >/dev/null 2>&1"
+#     cron_file: send-to-veracode
+
+# - name: Configure | Cron | Send veracode results to slack
+#   cron:
+#     name: send to slack
+#     weekday: "1,4"
+#     minute: "30"
+#     hour: "15"
+#     user: root
+#     job: "veracodecli get_pdf_report --app_name {{ veracode_scanner_app_name }} --slack_upload {% if veracode_slack_upload %}yes{% else %}no{% endif %} >/dev/null 2>&1"
+#     cron_file: send-to-slack

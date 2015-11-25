@@ -1,2 +1,3 @@
+{{ ansible_managed }}
 PATH=$PATH:/usr/bin:/bin:/usr/local/bin
 {{ veracode_scanner_cron_shedule }} {{ veracode_scanner_cron_user }} veracodecli scan --repo {{ veracode_scanner_repo }} --app_name {{ veracode_scanner_app_name }}
